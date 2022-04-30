@@ -1,7 +1,7 @@
 {
     "private": true,
     "scripts": {
-        "start": "node index.js",
+        "start": "nodemon index.js",
         "dev": "npm run development",
         "development": "mix",
         "watch": "mix watch",
