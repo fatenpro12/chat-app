@@ -9,7 +9,9 @@ var ss = require('socket.io-stream');
 var users = [];
 var groups = [];
 
-server.listen(8890);
+var port= process.env.PORT || 8890
+
+server.listen(port);
 let broadcaster
 io.on('connection', function (socket) {
     socket.on("broadcaster", () => {
